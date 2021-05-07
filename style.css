@@ -69,7 +69,6 @@ body {
 }
 
 
-
 .haut {
     background-color: white;
 
@@ -121,7 +120,6 @@ a {
 }
 
 
-
 .titre {
     position: absolute;
     width: 100vw;
@@ -164,7 +162,6 @@ h1 {
     position: fixed;
 
 }
-
 
 
 h2 {
@@ -288,7 +285,6 @@ section#body-feuille {
 }
 
 
-
 #description {
     overflow-y: hidden;
     background-size: cover;
@@ -390,8 +386,6 @@ section#body-feuille {
 }
 
 
-
-
 label {
     right: 0 !important;
     top: 0;
@@ -427,12 +421,12 @@ label {
 }
 
 
-
 #toggle:checked ~ .message {
     top: 0;
 }
 
-#toggle:checked ~ .container {}
+#toggle:checked ~ .container {
+}
 
 
 #toggle:checked + label:after {
@@ -443,7 +437,6 @@ a:hover {
     color: #d0d0d0;
     transition: 0.5s;
 }
-
 
 
 .menu-principal li {
@@ -547,7 +540,7 @@ a:hover {
     width: 100%;
     overflow: hidden;
     height: 3rem;
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     padding-left: 100% !important;
     box-sizing: content-box;
 }
@@ -609,11 +602,6 @@ a:hover {
 }
 
 
-
-
-
-
-
 /* ----- blurry color ---
  ---------------------------  
  ---------------------------  
@@ -635,7 +623,7 @@ a:hover {
     -webkit-backdrop-filter: blur(85px);
     backdrop-filter: blur(5px) saturate(250%) hue-rotate(120deg);
     -webkit-mask-image: url(src/img/mask.svg);
-    mask-image: urlsrc/img/mask.svg);
+    mask-image: url(src/img/mask.svg);
     -webkit-mask-size: 25vw;
     mask-size: 25vw;
     -webkit-mask-repeat: no-repeat;
