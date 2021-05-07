@@ -1,0 +1,734 @@
+/*
+PALETTE DE COULEUR
+
+FONT:
+Origin : font-family:"Origin Super Condensed", sans-serif;
+Helvetica Neue : font-family:"Helvetica Neue", sans-serif;
+
+*/
+
+html {
+    background: #fff !important;
+}
+
+#titre {
+    background-image: url("src/img/feuille-site.jpg");
+    height: 100vh;
+    object-fit: scale-down;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+
+#body-feuille {
+    background-image: url("src/img/FEUILLE-SITE3.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: scale-down;
+    background-size: cover;
+    margin: 0 auto;
+
+
+}
+
+#footer-feuille {
+    background-image: url("src/img/feuille-contact.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: scale-down;
+    background-size: cover;
+    margin: 0 auto;
+
+
+}
+
+
+section#description {
+    background-color: black;
+    margin-bottom: -100px;
+
+}
+
+#description {
+
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+
+.haut {
+    background-color: white;
+
+}
+
+.eventhes2021 {
+
+    z-index: 9;
+    top: 0;
+    padding-top: 20px;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* éléments importants */
+
+.row {
+    display: flex;
+    position: relative;
+}
+
+.col-l,
+.col-r {
+    flex: 1;
+}
+
+.row h3 {
+    position: sticky;
+    top: 3rem;
+}
+
+#plan-projets {
+    position: sticky;
+    top: 9rem;
+
+}
+
+#plan-ville {
+    position: relative;
+}
+
+.row2 {
+    display: flex;
+}
+
+
+
+.titre {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/*
+
+ <h3 id="titre-home">Rêvons la ville <br>de demain</h3>
+#titre-home {
+    color: black;
+    font-size: 27vw;
+    line-height: 20vw;
+}
+*/
+
+.titre h3,
+.titre h2 {
+    text-align: center;
+}
+
+.titre h3 {
+    text-align: center;
+    font-size: 14em;
+}
+
+
+h1 {
+    font-family: "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 0 auto;
+    position: fixed;
+
+}
+
+
+
+h2 {
+    font-family: origin-super-condensed, sans-serif;
+
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 5em;
+    margin: 0 auto;
+}
+
+
+h3 {
+    font-family: origin-super-condensed, sans-serif;
+
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 8em;
+    margin: 0 auto;
+}
+
+h4 {
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 1.7em;
+}
+
+h5 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+
+    font-size: 3em;
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* CURSOR*/
+
+#Pointer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    pointer-events: none;
+    mix-blend-mode: hard-light;
+}
+
+#Pointer > .cursor {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    visibility: hidden;
+    -webkit-transition: -webkit-filter .2s cubic-bezier(.25, .25, .75, .75);
+    transition: -webkit-filter .2s cubic-bezier(.25, .25, .75, .75);
+    -o-transition: filter .2s cubic-bezier(.25, .25, .75, .75);
+    transition: filter .2s cubic-bezier(.25, .25, .75, .75);
+    transition: filter .2s cubic-bezier(.25, .25, .75, .75), -webkit-filter .2s cubic-bezier(.25, .25, .75, .75);
+}
+
+#Pointer .default {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#Pointer .default {
+    background-color: #333333;
+}
+
+/* STRUCTURE */
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+
+
+#projets p {
+    padding-bottom: 100px;
+}
+
+#projets .col-r img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    right: 0;
+    padding: 0;
+}
+
+
+section#programme {
+    margin: 0;
+    padding: 100px 0 40px 0;
+}
+
+section#body-feuille {
+    margin: 0;
+}
+
+
+
+#description {
+    overflow-y: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    cursor: pointer;
+}
+
+
+#description p {
+    color: transparent;
+    position: relative;
+}
+
+#description > img {
+    transition: 2s;
+    filter: blur(8px);
+}
+
+#description > img:hover {
+    transition: 2s;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+
+#description p:hover {
+    color: black;
+    z-index: 3;
+
+}
+
+#description:hover {
+    color: black;
+
+}
+
+#contact h3,
+#contact p {
+    color: white;
+}
+
+/* NAVIGATION */
+
+
+.message {
+    color: white !important;
+    background-color: black;
+    position: fixed;
+    top: -370px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    padding: 30px 0 0 0;
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    overflow: hidden;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-bottom-color: white;
+    z-index: 2;
+}
+
+.message ul {
+    list-style: none;
+}
+
+.message a {
+    color: white;
+}
+
+#toggle {
+    position: absolute;
+    appearance: none;
+    top: -100%;
+}
+
+.box-to-toggle {
+    display: none;
+}
+
+.toggler h5:after {
+    display: inline-block;
+    content: "+";
+    position: absolute;
+    right: 0;
+}
+
+.toggler.plus h5:after {
+    content: "+";
+    position: absolute;
+    right: 0;
+}
+
+.toggler.moins h5:after {
+    content: "-";
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+label {
+    right: 0 !important;
+    top: 0;
+    padding-top: 20px;
+    text-shadow: black 1px 1px 1px;
+    mix-blend-mode: difference;
+
+}
+
+
+#toggle + label {
+    position: fixed;
+    z-index: 3;
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    color: white;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all 500ms ease;
+    font-size: 1.7em;
+
+}
+
+
+#toggle + label:after {
+    content: "+";
+}
+
+
+
+#toggle:checked ~ .message {
+    top: 0;
+}
+
+#toggle:checked ~ .container {}
+
+
+#toggle:checked + label:after {
+    content: "-"
+}
+
+a:hover {
+    color: #d0d0d0;
+    transition: 0.5s;
+}
+
+
+
+.menu-principal li {
+    margin: 0;
+}
+
+.menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.menu-principal li a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+    display: inline-block;
+}
+
+/* SECTION NEWS */
+
+#news .container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+#news .container article {
+    width: 30%;
+    background-color: lightyellow;
+}
+
+
+/* ticker */
+
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-wrap {
+    position: fixed !important;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 3rem;
+    background-color: rgba(0, 0, 0);
+    padding-left: 100% !important;
+    box-sizing: content-box;
+}
+
+.ticker-wrap .ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+
+.ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.ticker__item {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+
+/* AUTRES */
+
+#programme h2,
+#programme h5 {
+    padding: 50px 0px;
+}
+
+#organisateurs .orga-padd {
+    padding: 100px 0px;
+}
+
+#organisateurs {
+    padding-top: 100px;
+}
+
+
+#organ-titre img {
+    padding-top: 100px;
+}
+
+#projets img {
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* ----- blurry color ---
+ ---------------------------  
+ ---------------------------  
+ ---------------------------  
+  -------------------------- 
+*/
+
+#blur-around {
+    position: fixed;
+    z-index: 999999999999 !important;
+    pointer-events: none;
+    /* twice the viewport size so it always covers fully */
+    width: 100vw;
+    height: 100vh;
+    /* negative offset by half so we are sure we cover the full viewport */
+
+    /* we'll use transform translate to move it */
+    transform-origin: center;
+    -webkit-backdrop-filter: blur(85px);
+    backdrop-filter: blur(5px) saturate(250%) hue-rotate(120deg);
+    -webkit-mask-image: url(src/img/mask.svg);
+    mask-image: urlsrc/img/mask.svg);
+    -webkit-mask-size: 25vw;
+    mask-size: 25vw;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    margin-left: -6vw;
+    margin-top: -6vw;
+    transition: ease 0.2s;
+    animation-name: blur;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+/* The animation code */
+@keyframes blur {
+    0% {
+        backdrop-filter: blur(5px) saturate(100%) hue-rotate(0deg);
+    }
+
+    50% {
+        backdrop-filter: blur(7px) saturate(200%) hue-rotate(180deg);
+    }
+
+    100% {
+        backdrop-filter: blur(5px) saturate(100%) hue-rotate(360deg);
+    }
+}
+
+/* falback for browsers that don't have backdrop-filter */
+@supports not ((backdrop-filter: blur(0px)) or (-webkit-backdrop-filter: blur(0px))) {
+    #blur-around {
+        background-color: rgba(255, 255, 255, .8);
+    }
+}
+
+
+/* ----- 12 projets ---
+ ---------------------------  
+ ---------------------------  
+ ---------------------------  
+  -------------------------- 
+*/
+
+#leprojet-r {
+    transition-timing-function: ease-in;
+}
+
+/* ----- boule - infos ---
+ ---------------------------  
+ ---------------------------  
+ ---------------------------  
+  -------------------------- 
+*/
+
+.spinner {
+    filter: blur(7px);
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: 340px 200px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    filter: blur(7px);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #3193d1;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        background-color: #f27889;
+    }
+}
